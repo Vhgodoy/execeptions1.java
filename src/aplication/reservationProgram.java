@@ -1,4 +1,4 @@
-package aplication;
+package src.aplication;
 
 import src.model.entities.Reservation;
 
@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Program {
+public class reservationProgram {
 
     public static void main (String[] args) throws ParseException {
 
@@ -35,6 +35,7 @@ public class Program {
             checkIn = sdf.parse(sc.next());
             System.out.print("Check-out date (dd/MM/yyyy): ");
             checkOut = sdf.parse(sc.next());
+
 
             Date now = new Date();
             if (checkIn.before(now) || checkOut.before(now)) {
